@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png">
+    <title>invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body dir="rtl"> 
+    <div class="main" style="flex:1;">
+      <div class="container-fluid">
+        <div class="row"> 
+          <div class="col-md-12"> 
+            <div class="main_content"> 
+              <div class="form-steps">
+                <div class="main-header"> <img src="./img/logo.PNG" alt=""></div>
+                <div class="progress-bar"> 
+                  <div class="progress-step active" data-title="بياناتك"></div>
+                  <div class="progress-step" data-title="نوع السديري"></div>
+                  <div class="progress-step" data-title="المقاسات"></div>
+                  <div class="progress-step" data-title="اكسسوارات"></div>
+                  <div class="progress-step" data-title="نوع الخباطة"></div>
+                  <div class="progress-step" data-title="نوع الرقبة"></div>
+                  <div class="progress-step" data-title="جيب البنطلون"></div>
+                  <div class="progress-step" data-title="الكبك"></div>
+                  <div class="progress-step" data-title="غير معروف"></div>
+                  <div class="progress-step" data-title="ملاحظات"></div>
+                  <div class="bar"></div>
+                </div>
+                <form action="">
+                  <div class="form-step active"> 
+                    <div class="input-group"> 
+                      <label for="username">الاسم
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="username" type="text" placeholder="اكتب الاسم هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="orderNumb">رقم الطلب
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="orderNumb" type="text" placeholder="اكتب رقم الطلب هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="recetnumb">رقم الفاتورة
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="recetnumb" type="text" placeholder="اكتب رقم الفاتورة هنا ..">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault1">سديري</label>
+                      <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault2">كويتي </label>
+                      <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault3">سعودي </label>
+                      <input class="form-check-input" id="flexRadioDefault3" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault4">قطري </label>
+                      <input class="form-check-input" id="flexRadioDefault4" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="input-group"> 
+                      <label for="sizecount">عدد القطع
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="sizecount" type="text" placeholder="اكتب العدد هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="neckSize">مقاس الرقبة
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="neckSize" type="text" placeholder="اكتب مقاس الرقبة هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="handSize">مقاس اليد
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="handSize" type="text" placeholder="اكتب مقاس اليد هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="shoulderSize">مقاس الكتف
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="shoulderSize" type="text" placeholder="اكتب مقاس الكتف هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="chestSize">مقاس الصدر
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="chestSize" type="text" placeholder="اكتب مقاس الصدر هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="elbowSize">مقاس الكوع
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="elbowSize" type="text" placeholder="اكتب مقاس الكوع هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="armpitSize">مقاس الباط
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="armpitSize" type="text" placeholder="اكتب مقاس الباط هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="underSize">مقاس اسفل الباط
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="underSize" type="text" placeholder="اكتب مقاس اسفل الباط هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="longSize">مقاس الطول
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="longSize" type="text" placeholder="اكتب مقاس الطول هنا ..">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="input-group"> 
+                      <label for="acsseCount">عدد الاكسسوار
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="acsseCount" type="text" placeholder="اكتب عدد الاكسسوار هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="clothKind">نوع القماش
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="clothKind" type="text" placeholder="اكتب نوع القماش هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="acsseKind">نوع الاكسسوار
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="acsseKind" type="text" placeholder="اكتب نوع الاكسسوار هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="model">نوع الموديل
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="model" type="text" placeholder="اكتب نوع الموديل هنا ..">
+                    </div>
+                    <div class="input-group"> 
+                      <label for="pocketAcsse">اككسوار الجيب
+                        <hr class="label-hr">
+                      </label>
+                      <input class="form-control" id="pocketAcsse" type="text" placeholder="اكتب اككسوار الجيب هنا ..">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault5">خياط دبل</label>
+                      <input class="form-check-input" id="flexRadioDefault5" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault6">خفيف</label>
+                      <input class="form-check-input" id="flexRadioDefault6" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault7">تركيب </label>
+                      <input class="form-check-input" id="flexRadioDefault7" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault8">سستة </label>
+                      <input class="form-check-input" id="flexRadioDefault8" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault9">زرار مخفي </label>
+                      <input class="form-check-input" id="flexRadioDefault9" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault10">خيط مخفي </label>
+                      <input class="form-check-input" id="flexRadioDefault10" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault11">صيني<img src="./img/كم_صيني.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault11" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault12">فرنسي<img src="./img/كم_فرنسي.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault12" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault14">قلاب زرين <img src="./img/كم_قلاب_زرين.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault14" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault99">قلاب <img src="./img/كم_قلاب.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault99" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault100">ملكي زر واحد <img src="./img/ملكي_زر_واحد.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault100" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault15">ملكي زرين<img src="./img/كم_ملكي_زرين.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault15" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault16"><img src="./img/pocket1.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault16" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault17"><img src="./img/pocket2.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault17" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault18"><img src="./img/pocket3.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault18" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault19"><img src="./img/pocket4.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault19" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault20"><img src="./img/pocket5.PNG" alt=""></label>
+                      <input class="form-check-input" id="flexRadioDefault20" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault31"><img src="./img/kabak1.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault31" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault32"><img src="./img/kabak2.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault32" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault33"><img src="./img/kabak3.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault33" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault34"><img src="./img/kabak4.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault34" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault35"><img src="./img/kabak5.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault35" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault36"><img src="./img/kabak6.PNG" alt="" style="width:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault36" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault37"><img src="./img/unknown1.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault37" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault38"><img src="./img/unknown2.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault38" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault39"><img src="./img/unknown3.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault39" type="radio" name="flexRadioDefault" checked="">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault40"><img src="./img/unknown4.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault40" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault41"><img src="./img/unknown5.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault41" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault42"><img src="./img/unknown6.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault42" type="radio" name="flexRadioDefault">
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                      <label class="kind-label" for="flexRadioDefault43"><img src="./img/unknown7.PNG" alt="" style="width:auto !important; height:auto !important;"></label>
+                      <input class="form-check-input" id="flexRadioDefault43" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                    </div>
+                  </div>
+                  <div class="form-step"> 
+                    <div class="input-group"> 
+                      <label for="notes">ملاحظات
+                        <hr class="label-hr">
+                      </label>
+                      <textarea id="notes" name="" cols="30" rows="10" placeholder="اكتب ملاحظاتك هنا .."> </textarea>
+                    </div>
+                    <div class="buttons-container">
+                      <button class="next" type="button">التالي</button>
+                      <button class="prev" type="button">السابق</button>
+                      <button class="submit" type="submit">موافق</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.min.js"> </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
