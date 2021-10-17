@@ -21,15 +21,19 @@
         counter-reset: step
         width: 100%
         @include mainTransition
+        @media (max-width:$Stablet)
+            padding: 3rem 0rem
         &::before
             content: ""
             position: absolute
             top: 50%
             transform: translateY(-50%)
             height: 4px
-            width: calc(100% - 2rem);
+            width: calc(100% - 2rem)
             background: #dcdcdc
             z-index: 1
+            @media (max-width:$Stablet)
+                width: 98%
         .progress-step
             width: 1.9rem
             height: 1.9rem
@@ -40,6 +44,10 @@
             justify-content: center
             z-index: 999
             @include mainTransition
+            @media (max-width:$Stablet)
+                width: 0.9rem
+                height: 0.9rem
+                font-size: 10px
             &::before
                 counter-increment: step
                 content: counter(step)
