@@ -1,0 +1,77 @@
+-var PageTitle = "invoice"
+doctype html
+html(lang="en")
+    head
+        //- styles
+        include layout/meta.pug
+        include layout/styles.pug
+    body(dir="rtl") 
+        .main(style="flex:1;")
+            .container-fluid
+                .row 
+                    .col-md-12 
+                        .main_content 
+                            .form-steps
+                                .main-header 
+                                    img(src="./img/logo.PNG" alt="")
+                                //- navigation menu
+                                include ./components/_nav.pug
+                                //- -----------------//
+                                //- form -----
+                                form(action="")
+                                    .form-step.active 
+                                        include components\_form-user.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                    .form-step 
+                                        include components/_form_kind.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_sizes.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_details.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include ./components/_form_sewing.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_collar.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_pocket.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_kabak.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        include components/_form_unkown.pug
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                    .form-step 
+                                        .input-group 
+                                            label(for="notes") ملاحظات
+                                                hr.label-hr
+                                            textarea#notes(name="" cols="30" rows="10" placeholder="اكتب ملاحظاتك هنا ..") 
+                                        .buttons-container
+                                            button.next(type="button") التالي
+                                            button.prev(type="button") السابق
+                                            button.submit(type="submit") موافق
+        //- scripts
+        include layout/scripts
+        script(src="js/main.js")

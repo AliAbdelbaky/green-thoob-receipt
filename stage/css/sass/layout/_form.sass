@@ -1,0 +1,109 @@
+.form-steps
+    background-color: #fff
+    border-top: 3px solid $main_color
+    padding: 10px
+    box-shadow: 0px 3px 7px 5px #ccc
+    border-radius: 10px
+    min-width: 60%
+    .main-header
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 10px 0px
+    .progress-bar
+        margin: 10px 0px
+        padding: 3rem 1rem
+        display: flex
+        flex-direction: row
+        position: relative
+        justify-content: space-between
+        background: transparent
+        counter-reset: step
+        width: 100%
+        @include mainTransition
+        &::before
+            content: ""
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            height: 4px
+            width: calc(100% - 2rem);
+            background: #dcdcdc
+            z-index: 1
+        .progress-step
+            width: 1.9rem
+            height: 1.9rem
+            background: #dcdcdc
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            z-index: 999
+            @include mainTransition
+            &::before
+                counter-increment: step
+                content: counter(step)
+            &::after
+                content: attr(data-title)
+                position: absolute
+                top: calc( 100% - 2rem)
+                font-size: 8px
+                color: #515e54
+                opacity: 1
+                font-weight: 600
+            &.active
+                background: $main_color
+                color: #fff
+        .bar
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            height: 3px
+            z-index: 3
+            width: 0%
+            background: $main_color
+            @include mainTransition
+        button
+            border: none
+            outline: none
+            cursor: pointer
+            border-radius: 50%
+            background-color: $main_color
+            color: #fff
+            padding: 5px 13px
+    form
+        .form-step
+            display: none
+            transform-origin: top
+            animation: stepanimate .3s
+            &.active
+                display: block
+            .input-group
+                margin-bottom: 10px
+            label
+                display: block
+                width: 100%
+                margin: 5px 0px
+                font-weight: 600
+                letter-spacing: 2px
+                img
+                    width: 60px
+                    height: 60px
+                    border: 1px solid #000
+                &.kind-label
+                    display: flex
+                    justify-content: space-between
+    .buttons-container
+        margin: 2rem 0rem 1rem
+        display: flex
+        justify-content: space-between
+        button
+            padding: 1px 30px
+            font-weight: 500
+            border-radius: 5px
+            border: none
+            outline: none
+            background: $main_color
+            color: $second_color
+            text-align: center
+            cursor: pointer
